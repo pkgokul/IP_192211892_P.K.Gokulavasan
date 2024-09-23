@@ -79,7 +79,7 @@ section {
     padding:20px;
     border-radius: 5px;
     font-size: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
 }
 
 .portfolio .portfolio-grid {
