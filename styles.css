@@ -79,6 +79,9 @@ section {
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
 
 .portfolio .portfolio-grid {
