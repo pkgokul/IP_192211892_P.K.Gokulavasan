@@ -1,3 +1,9 @@
+@media (max-width: 768px) {
+  /* Styles for devices with width less than 768px (e.g., tablets, phones) */
+  body {
+    font-size: 16px;
+  }
+}
 * {
     margin: 0;
     padding: 0;
