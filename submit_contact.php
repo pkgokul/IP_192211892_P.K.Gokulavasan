@@ -1,34 +1,34 @@
 <?php
-// Database connection
-$servername = "localhost";
-$username = "root"; // Default XAMPP username
-$password = ""; // Default XAMPP password is empty
-$dbname = "portfolio_db";
+// Database connection settings
+$host = 'localhost';
+$dbname = 'portfolio_contact';
+$username = 'root'; // Default XAMPP MySQL username
+$password = ''; // Default password is empty
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+// Establish the connection
+$conn = new mysqli($host, $username, $password, $dbname);
 
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Capture form data
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+// Check if the form is submitted
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name = $conn->real_escape_string($_POST['name']);
     $email = $conn->real_escape_string($_POST['email']);
     $message = $conn->real_escape_string($_POST['message']);
 
-    // Insert form data into database
-    $sql = "INSERT INTO contact_form (name, email, message) 
-            VALUES ('$name', '$email', '$message')";
+    // Insert data into the table
+    $sql = "INSERT INTO contact_messages (name, email, message) VALUES ('$name', '$email', '$message')";
 
     if ($conn->query($sql) === TRUE) {
-        echo "Message successfully submitted!";
+        echo "Message sent successfully!";
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
-
-    $conn->close();
 }
+
+// Close the connection
+$conn->close();
 ?>
