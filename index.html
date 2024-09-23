@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Professional Portfolio</title>
     <link rel="stylesheet" href="styles.css">
@@ -41,12 +42,8 @@
                 <div class="skill-item">HTML</div>
                 <div class="skill-item">CSS</div>
                 <div class="skill-item">JavaScript</div>
-            </div>
-            <br>
-            <div class="skill-list">
                 <div class="skill-item">React</div>
                 <div class="skill-item">Node.js</div>
-                <div class="skill-item">PHP</div>
             </div>
         </div>
     </section>
@@ -58,7 +55,8 @@
             <div class="portfolio-grid">
                 <div class="portfolio-item">
                     <img src="project1.jpeg" alt="Project 1">
-                    <h3>Project 1 (netflix clone)</h3>
+                    <h3>Project 1 (netflix clone)
+                    </h3>
                 </div>
                 <div class="portfolio-item">
                     <img src="download (1).jpeg" alt="Project 2">
@@ -71,20 +69,17 @@
             </div>
         </div>
     </section>
+
     <section id="contact" class="contact">
         <div class="container">
             <h2>Contact me</h2>
             <br>
             <form id="contact-form" action="submit_contact.php" method="POST">
                 <input type="text" id="name" name="name" placeholder="Your Name" required>
-                <br><br>
                 <input type="email" id="email" name="email" placeholder="Your Email" required>
-                <br><br>
                 <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-                <br><br>
                 <button type="submit">Send Message</button>
-            </form>
-
+            </form>            
         </div>
     </section>
 
