@@ -76,10 +76,9 @@ section {
 .skills .skill-item {
     background: #007BFF;
     color: #fff;
-    padding:20px;
+    padding: 10px 20px;
     border-radius: 5px;
     font-size: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
 }
 
 .portfolio .portfolio-grid {
